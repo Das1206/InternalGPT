@@ -1,0 +1,34 @@
+.typing-animation {
+    mix-blend-mode: multiply;
+}
+
+.message {
+    max-width: min(90%, 54rem);
+    padding: 1rem max(1rem, 1.5vw);
+
+    * {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+
+    pre {
+        white-space: pre-wrap;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    &--sent {
+        border-radius: 1rem 1rem 0 1rem;
+        margin-left: auto;
+        border: solid 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &--received {
+        background-color: #F5F5F5;
+        border-radius: 0 1rem 1rem 1rem;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+:root,
+body {
+  height: 100%;
+}
+
+#__next {
+  height: 100vh;
+}
+
+
+.react-scroll-to-bottom--css-uzqrz-79elbk {
+  position: relative;
+}
+
+.react-scroll-to-bottom--css-ikyem-1n7m0yu {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.feather {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
+.divider--vertical {
+  height: 1.5rem;
+  width: 1px;
+  border-left: 0.1rem dashed currentColor;
+  align-self: center;
+  opacity: 0.5;
+}
+
+.divider--horizontal {
+  width: min(80%, 1.5rem);
+  height: 1px;
+  border-top: 0.1rem dashed currentColor;
+  justify-self: center;
+  opacity: 0.5;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

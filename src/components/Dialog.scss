@@ -1,0 +1,7 @@
+.dialog__panel {}
+
+@media screen and (max-width: 768px) {
+    .dialog__panel {
+        margin-top: auto;
+    }
+}

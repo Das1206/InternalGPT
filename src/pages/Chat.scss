@@ -1,0 +1,21 @@
+.grow-wrap {
+    display: grid;
+    max-height: 6rem;
+    overflow-y: auto;
+}
+
+.grow-wrap::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+}
+
+.grow-wrap>textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.grow-wrap>textarea,
+.grow-wrap::after {
+    grid-area: 1 / 1;
+}
